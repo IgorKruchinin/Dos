@@ -1,5 +1,5 @@
 # Dos
-my programs for DOS
+My programs for DOS (I compile this with Borland C++)
 
 RANDBEEP sends signals or double signals from the system speaker at random intervals within the specified intervals
 
