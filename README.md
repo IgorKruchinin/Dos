@@ -1,7 +1,7 @@
 # Dos
 my programs for DOS
 
-RANDBEEP program sends signals or double signals from the system speaker at random intervals within the specified intervals
+RANDBEEP sends signals or double signals from the system speaker at random intervals within the specified intervals
 
 LISTS is my simple realisation of singly linked lists with main function for test
 
