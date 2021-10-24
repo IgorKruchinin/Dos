@@ -8,7 +8,7 @@ void true_signal() {
 }
 void false_signal() {
 	printf("\a");
-	delay(25);
+	delay(10);
 	printf("\a");
 }
 
