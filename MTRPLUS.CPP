@@ -4,7 +4,7 @@
 
 int main(int argc, char const * argv[]) {
 	if (argc == 3) {
-		int amount = 0;
+		double amount = 0;
 		for (int i = 0; i < atoi(argv[1]); i++) {
 			srand(time(NULL));
 			int a = rand();
@@ -14,16 +14,18 @@ int main(int argc, char const * argv[]) {
 			cout << a << " + " << b << " = " << "?\n";
 			long long t = time(NULL);
 			cin >> c;
-			if (c == a + b && t <= time(NULL) + atoi(argv[2])) {
+			if (c == a + b && time(NULL) <= t + atoi(argv[2])) {
 				cout << "You are right!\n";
 				++amount;
-			} else if (t > time(NULL) + atoi(argv[2])) {
-				cout << "Timed out!";
+			} else if (time(NULL) > t + atoi(argv[2])) {
+				cout << "Timed out!\n";
 			} else {
 				cout <<  "Wrong answer!\n";
 			}
 		}
 		cout << "True answers: " << amount / atoi(argv[1]) * 100 << "%";
+	} else {
+		cout << "Usage: MTRPLUS {number of examples per addition} {timeout}";
 	}
 	return 0;
 }
