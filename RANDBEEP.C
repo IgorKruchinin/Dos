@@ -17,7 +17,8 @@ int main(int argc, char const * argv[]) {
 		void (*signal[2])(void);
 		signal[0] = true_signal;
 		signal[1] = false_signal;
-		for (int i = 0; i <= atoi(argv[1]); i++) {
+                int i;
+		for (i = 0; i <= atoi(argv[1]); i++) {
 			srand(time(NULL));
 			int sec = rand() % atoi(argv[3]) + atoi(argv[2]);
 			delay(sec * 1000);
